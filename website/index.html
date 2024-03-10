@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Simon Says</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+
+    <h1>Simon Says</h1>
+    <div class="simon">
+      <button class="panel yellow" onclick="handlePanelClick(0)"></button>
+      <button class="panel blue" onclick="handlePanelClick(1)"></button>
+      <button class="panel red" onclick="handlePanelClick(2)"></button>
+      <button class="panel green" onclick="handlePanelClick(3)"></button>
+      <img src="images/light.webp" class="light">
+    </div>
+
+    <div style="height: 30px;"></div>
+
+    <button class="startButton" onclick="startGame()">Start Game</button>
+
+    <div style="height: 20px;"></div>
+
+    <div style="font-size: 20px;">Name: <input type="text" class="nameInput" placeholder="Unknown"></div>
+
+    <div style="height: 20px;"></div>
+
+    <div style="display: flex; justify-content: space-around; width: 300px;">
+      <div class="score" style="font-size: 30px;">Score: 0</div>
+      <div class="best" style="font-size: 30px;">Best: 0</div>
+    </div>
+
+    <div style="height: 20px;"></div>
+
+    <a href="leaderboard.html" style="font-size: 25px;">Leaderboard</a>
+
+  </div>
+
+  <script src="indexScript.js"></script>
+</body>
+
+</html>
